@@ -1,0 +1,42 @@
+.card {
+  width: 100px;
+  height: 150px;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.card_closed {
+  background-image: url("./assets/images/back.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+
+.open {
+  background-color: #fff;
+  /* Optionally set a different background or content when the card is open */
+  border: 3px solid #020202;
+}
+
+.card_matched {
+  background-color: #aaffaa;
+  pointer-events: none;
+}
+#root {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px; /* This adds space between the cards */
+}
+
+#myGif {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  /* Add more styles as needed */
+}
